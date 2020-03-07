@@ -16,8 +16,63 @@
     <script> 
         alert("Bienvenido al host virtual de la galeria FUMC Art Gallery");
     </script>
+   
+<link rel=stylesheet type="text/css" href="menu.css">
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://use.fontawesome.com/b5bf1bd49e.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto:700" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Menu</title>
     
 </head>
+
+<header>
+
+
+<div class="m-dropdown">
+	<div class="e-button open">
+		Menu
+		<div class="e-burger">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<ul class="e-list">
+		<li><a href="#">Product Backlog</a></li>
+		<li><a href="#">Spring Backlog</a></li>
+		<li><a href="#">Galeria de arte</a></li>
+		<li><a href="#">Metodologia Scrum</a></li>
+		<li><a href="#">Integrantes</a></li>
+	</ul>
+</div>
+
+</div>
+	<script>
+
+$(".e-list").slideUp(function() {
+	$(".e-button").removeClass("open");
+});
+
+$(".e-button").on("click", function() {
+	if ($(this).hasClass("open")) {
+		$(".e-list").slideUp(function() {
+			$(".e-button").removeClass("open");
+		});
+	} else {
+		$(this).addClass("open");
+		setTimeout(function() {
+			$(".e-list").stop().slideDown();
+		}, 200);
+	}
+});
+
+
+
+	</script>
+
+</header>
 
 <body>
 
