@@ -8,6 +8,7 @@ body {
   margin: 50px;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
+  text-align: center;
   background-color: #D1D5D0;
   position:absolute; 
   z-index:0;
